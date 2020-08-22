@@ -9,7 +9,7 @@ module.exports = {
   .setTitle("Invite Me or Die")
   .setColor("#00BFFF")
   .setDescription(`[CLICK ME](${inviteURL}) ATAU **TEWAS**`)
-  .setFooter('© Created LarSpeed', client.user.displayAvatarURL)
+  .setFooter('© Created LarSpeed & @Muhammadbagus', client.user.displayAvatarURL)
     
     return message.channel.send(embed)
   

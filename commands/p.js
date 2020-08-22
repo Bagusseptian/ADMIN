@@ -21,8 +21,8 @@ module.exports = {
     //FIRST OF ALL WE WILL ADD ERROR MESSAGE AND PERMISSION MESSSAGE
     if (!args.length) {
       //IF AUTHOR DIDENT GIVE URL OR NAME
-      embed.setAuthor("SALAH NULIS BLOK: __JANGAN LUPA TULIS JUDUL LAGU__ ")
-     .setFooter('© Created by LarSpeed')
+      embed.setAuthor("SALAH NULIS BLOK: __JANGAN LUPA TULIS JUDUL LAGU ATAU LINK MUSIK__ ")
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
     }
 
@@ -31,7 +31,7 @@ module.exports = {
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("MASUK VOICE DULU BLOKK!")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
     
       return message.channel.send(embed);
     }
@@ -45,7 +45,7 @@ module.exports = {
 
     if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
       embed.setAuthor("ERROR MAS GK BISA DI PUTER MUSIK NYA")
-      .setFooter('© Created by LarSpeed')
+      .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed);
     }
 
@@ -119,7 +119,7 @@ return message.channel.send(embed);
       embed.setDescription(`**[${song.title}](${song.url})**`)
       embed.setThumbnail(song.thumbnail)
       .setFooter("Likes - " + songData.videoDetails.likes + ", Dislikes - " +  songData.videoDetails.dislikes+
-      '© Created by LarSpeed')
+      '© Created by LarSpeed & @Muhammadbagus')
       return serverQueue.textChannel
         .send(embed)
         .catch(console.error);

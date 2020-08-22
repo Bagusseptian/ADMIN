@@ -9,27 +9,36 @@ const { CanvasSenpai } = require("canvas-senpai")
 const canva = new CanvasSenpai();
 //CLIENT EVENTS
 client.on("ready", () => {
-     var activities = [
-        "PUBG",
-        "VALORANT",
-        "Fivem",
-        "Point Blank",
-        "LarSpeed YT",
-        "PUBGM",
-        "TikTok",
-        "LarServerROLEPLAY"
-    ]
+     
  
-    const index = Math.floor(Math.random() * activities.length + 1)
+
+  client.user.setPresence({ status: 'Idle' });
+  const activities_list = [
+   "-Help", 
+   "@LingsirWengiTeam",
+   "ON 24/7", 
+   "Made by: @Muhammadbagusseptian",
+    "FIVEM",
+    "Grand Theft Auto V",
+    "Point Blank",
+    "Lost Saga",
+    "@Muhammadbagusseptian"
+    
+    ]; // creates an arraylist containing phrases you want your bot to switch through.
     setInterval(() => {
-        client.user.setActivity(activities[index]);
-    }, 10000);
-console.log('Ready to play song | Bot created by Larspeed')
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
+        client.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
+    }, 10000); // Runs this every 10 seconds.});
+})
+
+
+ console.log('Ready to play song | Bot created by Muhammadbagusseptian')
 // Set the client user's activity
+ 
+
 
  
 
-})
 client.on("warn", info => console.log(info));
 
 client.on("error", console.error)
@@ -86,12 +95,15 @@ client.on("guildMemberAdd", async member => { //usage of welcome event
       "welcome-image.png"
     );
  
-  client.channels.cache.get(chx).send("Welcome To My Server" + member.user.username, attachment) //get channel and send embed
+  client.channels.cache.get(chx).send("Welcome To My Server||" + member.user.username, attachment) //get channel and send embed
 });
-
+    
+  
     
     
- try  { //TRY TO GET COMMAND AND EXECUTE
+    
+try{ //TRY TO GET COMMAND 
+     //TRY TO GET COMMAND AND EXECUTE
       client.commands.get(command).execute(client, message, args)
     //COMMAND LOGS
     console.log(`${message.guild.name}: ${message.author.tag} Used ${client.commands.get(command).name} in #${message.channel.name}`)

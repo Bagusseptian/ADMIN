@@ -21,7 +21,7 @@ let embed = new MessageEmbed()
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("Masuk Voice Dulu BLOKK!")
-      .setFooter('© Created by LarSpeed')
+      .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed);
     }
     const serverQueue = message.client.queue.get(message.guild.id);
@@ -40,7 +40,7 @@ const vote = message.client.vote.get(message.guild.id)
          serverQueue.connection.dispatcher.end();
     embed.setDescription("VOTE - SKIP |SKIP AE TERUS")
     embed.setThumbnail(client.user.displayAvatarURL())
-   .setFooter('© Created by LarSpeed')
+   .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
        }
        
@@ -52,7 +52,7 @@ const vote = message.client.vote.get(message.guild.id)
           serverQueue.connection.dispatcher.end();
     embed.setDescription("✔ | GANTIAN BLOK!.LAGU LU NGANTUK")
     embed.setThumbnail(client.user.displayAvatarURL())
- .setFooter('© Created by LarSpeed')
+ .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
        }
        
@@ -70,7 +70,7 @@ vote.vote++
     serverQueue.connection.dispatcher.end();
     embed.setDescription("✔ | GANTIAN BLOK!. LAGU LU NGANTUK")
     embed.setThumbnail(client.user.displayAvatarURL())
-   .setFooter('© Created LarSpeed', client.user.displayAvatarURL)
+   .setFooter('© Created LarSpeed & @Muhammadbagus', client.user.displayAvatarURL)
  message.channel.send(embed);
   }
 };

@@ -29,7 +29,7 @@ let embed = new discord.MessageEmbed()
     .setDescription(`**LEVEL** - ${level}
 **XP** - ${remxp}/${levelxp}`)
         
-    .setFooter('© Created by LarSpeed ')
+    .setFooter('© Created by LarSpeed & @Muhammadbagus')
  message.channel.send(embed)   
     }
 }

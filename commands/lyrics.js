@@ -9,7 +9,7 @@ module.exports = {
     let embed = new MessageEmbed()
     .setDescription("Nyanyi nya Yang bener YAK!...")
     .setColor(COLOR)
-    .setFooter('© Created LarSpeed', client.user.displayAvatarURL)
+    .setFooter('© Created LarSpeed & @Muhammadbagus', client.user.displayAvatarURL)
     if(!args.length) {
       return message.channel.send("TULIS JUDUL LAGU COK")
     }
@@ -33,11 +33,11 @@ module.exports = {
         const firstLyricsEmbed = new MessageEmbed()
           .setColor(COLOR)
           .setDescription(lyrics.slice(0, 2048))
-       .setFooter('© Created by LarSpeed');
+       .setFooter('© Created by LarSpeed & @Muhammadbagus');
         const secondLyricsEmbed = new MessageEmbed()
           .setColor(COLOR)
           .setDescription(lyrics.slice(2048, lyrics.length))
-       .setFooter('© Created by LarSpeed');
+       .setFooter('© Created by LarSpeed & @Muhammadbagus');
         msg.edit(firstLyricsEmbed);
         message.channel.send(secondLyricsEmbed);
         return;

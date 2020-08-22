@@ -17,7 +17,7 @@ module.exports = {
         setTimeout(() => {
             process.exit(0);
         }, 5000);
-      message.channel.send('**__Server UP Sepikan Kota Indoplay__**' + ' @Everyone @Warga @Ladies'); 
+      message.channel.send('**__BOT UP,JANGAN LUPA FOLLOW @Muhammadbagusseptian__**' + '@everyone  '); 
       
     } 
 }

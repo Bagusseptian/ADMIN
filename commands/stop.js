@@ -19,7 +19,7 @@ let embed = new MessageEmbed()
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("Masuk Voice Dulu BLOKK!")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
     }
 
@@ -27,7 +27,7 @@ let embed = new MessageEmbed()
 
     if (!serverQueue) {
       embed.setAuthor("LAGU NYA GK ADA BLOK||APA YANG MAU DI STOP!")
-      .setFooter('© Created by LarSpeed')
+      .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed);
     }
 
