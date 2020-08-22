@@ -8,7 +8,7 @@ module.exports = {
     const { channel } = message.member.voice;
     if (!channel) {
       embed.setAuthor("MASUK VOICE DULU BLOKK!")
-      .setFooter('© Created by LarSpeed')
+      .setFooter('© Created by LarSpeed & @Muhammadbagus')
     
       return message.channe.send(embed);
     }
@@ -17,7 +17,7 @@ module.exports = {
 
     if (!serverQueue) {
       embed.setAuthor("Anterian Kosong Blok")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed);
     }
     
@@ -29,7 +29,7 @@ return message.channel.send(embed);
    
     if(args[0] > serverQueue.songs.length) {
       embed.setAuthor("LAGU nya Gk Ketemu")
-      .setFooter('© Created by LarSpeed')
+      .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed)
     }
     
@@ -37,7 +37,8 @@ return message.channel.send(embed)
     serverQueue.songs.splice(args[0] - 1, 1)
     embed.setDescription("Membuang lagu dari anterian ke tong sampah")
     embed.setThumbnail(client.user.displayAvatarURL())
-    .setFooter('© Created by LarSpeed')
+    .setFooter(`Request BY ${message.author.username}`+" ® Created by @Muhammadbagusseptian")
+.setTimestamp();
 return message.channel.send(embed)
   }
 };

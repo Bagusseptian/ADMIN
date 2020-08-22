@@ -15,7 +15,7 @@ module.exports = {
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("MASUK VOICE DULU BLOKK!")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
     }
 
@@ -29,7 +29,7 @@ module.exports = {
 return message.channel.send(embed)
  }
     embed.setDescription("GAK ADA YANG JEDA BLOK!")
- .setFooter('© Created by LarSpeed')
+ .setFooter('© Created by LarSpeed & @Muhammadbagus')
  message.channel.send(embed)
     
   }

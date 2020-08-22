@@ -19,7 +19,7 @@ module.exports = {
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("Masuk Voice Dulu BLOKK!")
-    .setFooter('© Created by LarSpeed')
+    .setFooter('© Created by LarSpeed & @Muhammadbagus')
   return message.channel.send(embed);
     }
     
@@ -27,25 +27,25 @@ module.exports = {
 
     if (!serverQueue) {
       embed.setAuthor("SETEL LAGU NYA DULU BEP")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
     }
     
     if(!args[0]) {
       embed.setAuthor(`MENGGANTI VOLUME ${serverQueue.volume}`)
-    .setFooter('© Created by LarSpeed')
+    .setFooter('© Created by LarSpeed & @Muhammadbagus')
   return message.channel.send(embed)
     }
     
     if(isNaN(args[0])) {
       embed.setAuthor("TULIS NOMOR NYA")
-  .setFooter('© Created by LarSpeed')
+  .setFooter('© Created by LarSpeed & @Muhammadbagus')
    return message.channel.send(embed)
     }
     
     if(args[0] > 200) {
       embed.setAuthor("You will die if you reach the limit of 200 :)")
-   .setFooter('© Created by LarSpeed')
+   .setFooter('© Created by LarSpeed & @Muhammadbagus')
   return message.channel.send(embed)
     }
     
@@ -53,7 +53,7 @@ module.exports = {
     serverQueue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100)
     embed.setDescription(`Seted Volume to ${args[0]}`)
     embed.setThumbnail(client.user.displayAvatarURL())
-    .setFooter('© Created by LarSpeed')
+    .setFooter('© Created by LarSpeed & @Muhammadbagus')
     message.channel.send(embed)
     
   }

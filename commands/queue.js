@@ -12,7 +12,7 @@ module.exports = {
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("Masuk Voice Dulu BLOKK!")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
 
  return message.channel.send(embed);
     }
@@ -21,7 +21,7 @@ module.exports = {
 
     if (!serverQueue) {
       embed.setAuthor("Tambah lagu nya dulu cok baru cek antrian")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
     }
 
@@ -32,7 +32,7 @@ module.exports = {
       { split: true }
     );
     embed.setThumbnail(client.user.displayAvatarURL())
-    .setFooter('© Created by LarSpeed')
+    .setFooter('© Created by LarSpeed & @Muhammadbagus')
     message.channel.send(embed);
   }
 };

@@ -13,7 +13,7 @@ module.exports = {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("MASUK VOICE DULU BLOKK!")
      
-    .setFooter('© Created LarSpeed', client.user.displayAvatarURL)
+    .setFooter('© Created LarSpeed & @Muhammadbagus', client.user.displayAvatarURL)
       return message.channel.send(embed);
       
       
@@ -24,7 +24,7 @@ module.exports = {
 
     if (!serverQueue) {
       embed.setAuthor("Gak ada Loop nyaaa!!")
-    .setFooter('© Created LarSpeed', client.user.displayAvatarURL)
+    .setFooter('© Created LarSpeed & @Muhammadbagus', client.user.displayAvatarURL)
   return message.channel.send(embed);
     }
     
@@ -34,7 +34,7 @@ module.exports = {
     
     embed.setDescription(`Loop is now **${serverQueue.loop ? "IYO" : "ORA"}**`)
     embed.setThumbnail(client.user.displayAvatarURL())
-   .setFooter('© Created by LarSpeed')
+   .setFooter('© Created by LarSpeed & @Muhammadbagus')
  message.channel.send(embed)
     
     

@@ -14,7 +14,7 @@ module.exports = {
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("Masuk Voice Dulu BLOKK!")
-      .setFooter('© Created by LarSpeed')
+      .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed);
     }
     
@@ -23,7 +23,7 @@ return message.channel.send(embed);
 
     if (!serverQueue) {
       embed.setAuthor("LAGU NYA GAK NYALA APA YANG DI PAUSE")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
     }
     
@@ -33,7 +33,7 @@ return message.channel.send(embed);
       
       embed.setDescription("✅ | JEDA LAGU AKTIF")
       embed.setThumbnail(client.user.displayAvatarURL())
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed)
   }  
   }

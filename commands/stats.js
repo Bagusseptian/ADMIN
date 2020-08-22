@@ -20,7 +20,7 @@ module.exports = {
     .addField("STATUS", client.user.presence.status, true)
     .addField("TOTAL MEMBERS", client.users.cache.size, true)
     .addField("NO. OF GUILD IN BOT IS PLAYING", client.queue.size)
-   .setFooter('© Created LarSpeed')
+   .setFooter('© Created LarSpeed & @Muhammadbagus')
 console.log(client.user.presence)
     message.channel.send(embed)
   }

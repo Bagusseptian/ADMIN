@@ -13,7 +13,7 @@ module.exports = {
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("Masuk VOICE dulu Blok!!")
-.setFooter('© Created by LarSpeed')
+.setFooter('© Created by LarSpeed & @Muhammadbagus')
  return message.channel.send(embed);
     }
 
@@ -21,18 +21,18 @@ module.exports = {
 
     if (!serverQueue) {
       embed.setAuthor("LAGUNYA GAK DI LOOP")
-      .setFooter('© Created by LarSpeed')
+      .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed);
     }
      if(!args[0]) {
       embed.setAuthor("Kasih Nomor Lagu nya")
-  .setFooter('© Created by LarSpeed')
+  .setFooter('© Created by LarSpeed & @Muhammadbagus')
   return message.channel.send(embed)
     }
     
       if(isNaN(args[0])) {
       embed.setAuthor("Kasih Nomor nya")
-    .setFooter('© Created by LarSpeed')
+    .setFooter('© Created by LarSpeed & @Muhammadbagus')
   return message.channel.send(embed)
     }
     
@@ -40,7 +40,7 @@ return message.channel.send(embed);
     //LETS FIX JUMP COMMAND :D
   if(serverQueue.songs.length < args[0]) {
     embed.setAuthor("Lagu di Anterian gk ketemu")
-    .setFooter('© Created by LarSpeed')
+    .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed)  
                                          }
     serverQueue.songs.splice(0, Math.floor(parseInt(args[0]) - 1))

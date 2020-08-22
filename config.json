@@ -1,9 +1,9 @@
 {
-  "PREFIX": "-", 
-  "TOKEN": "",
-  "YOUTUBE_API_KEY": "",
-  "QUEUE_LIMIT": 10 ,
+  "PREFIX": "`", 
+  "TOKEN": "NzI0NjM0NzIwMjAxMDgxMDM0.XvDCrA.sdkU1Ak_cVOeMA6LGeX9Omczl3w",
+  "YOUTUBE_API_KEY": "AIzaSyBXOsUVf-MqK9nZVCSuNT35Ftgu-tUKSes",
+  "QUEUE_LIMIT": 20 ,
   "COLOR": "#00BFFF",
-  "inviteURL": "https://discordapp.com/oauth2/authorize?client_id=709740376029790280&scope=bot&permissions=2146958847",
-  "OWNER_ID":"684761668193878047"
+  "inviteURL": "https://discordapp.com/oauth2/authorize?client_id=724634720201081034&scope=bot&permissions=2146958847",
+  "OWNER_ID":"462263215284420619"
 }

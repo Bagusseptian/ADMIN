@@ -15,7 +15,7 @@ module.exports = {
       .addField("Username:", client.user.username)
       .addField("Tag:", `**${client.user.discriminator}**`)
       .addField("ID:", client.user.id)
-      .addField("Owner:", `**Mawan Asgar**`)
+      .addField("Owner:", `**@Muhammadbagusseptian**`)
       .addField("Channel's:", `${client.channels.cache.size}`)
       .addField("Server's:", `${client.guilds.cache.size}`)
       .addField("users's:", `${client.users.cache.size}`)

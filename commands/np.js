@@ -13,7 +13,7 @@ module.exports = {
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
       embed.setAuthor("MASUK VOICE DULU BLOK!")
-     .setFooter('© Created by LarSpeed')
+     .setFooter('© Created by LarSpeed & @Muhammadbagus')
 return message.channel.send(embed);
     }
 
@@ -27,7 +27,7 @@ return message.channel.send(embed);
     
     embed.setDescription(`**SEDANG DI PUTAR SAIKI** - ${serverQueue.songs[0].title}`)
     .setThumbnail(serverQueue.songs[0].thumbnail)
-.setFooter('© Created by LarSpeed')
+.setFooter('© Created by LarSpeed & @Muhammadbagus')
  message.channel.send(embed)
 
     

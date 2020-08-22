@@ -12,7 +12,7 @@ let embed = new MessageEmbed()
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      embed.setAuthor("MUSIC UDAH ABIS,CEBAN DULU")
+      embed.setAuthor("Habis blok,Gift Pulsa lah")
       return queue.textChannel
         .send(embed)
         .catch(console.error);
